@@ -72,7 +72,7 @@ for rid, reader in reader_positions.items():
     ax.add_patch(circle)
 
 # Add contour lines to show signal strength zones
-levels = [0.8, 0.6, 0.4, 0.2]
+levels = sorted([0.2, 0.4, 0.6, 0.8])  # ✅ strictly increasing
 contour = ax.contour(X, Y, Z, levels=levels, colors='white', linewidths=0.6)
 ax.clabel(contour, inline=True, fontsize=8, fmt="%.1f")
 
