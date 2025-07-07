@@ -28,7 +28,7 @@ default_readers = {
     "13": [3040, 600],
 }
 
-pixels_per_meter = 10000  # Assumed scale
+pixels_per_meter = 11871  # Assumed scale
 
 # --- Sidebar: RFID Control Panel ---
 st.sidebar.markdown("### 📍 RFID Reader Parameters")
