@@ -49,7 +49,7 @@ Z = np.zeros_like(X)
 for reader in reader_positions.values():
     x0, y0 = reader["pos"]
     r_px = reader["radius"] * pixels_per_meter
-    sigma = r_px / 2.5
+    sigma = r_px / 1.5
     Z += np.exp(-((X - x0)**2 + (Y - y0)**2) / (2 * sigma**2))
 
 Z = Z / np.max(Z)  # Normalize
